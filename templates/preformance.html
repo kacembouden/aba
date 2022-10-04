@@ -1,0 +1,248 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+
+    <!-- Header -->
+
+    
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>ABA Future</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Our Services</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="preformance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <div class="page-heading header-text">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>Our Preformance</h1>
+            <span>We are over 10 years of experience</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="single-services">
+      <div class="container">
+        <div class="row" id="tabs">
+          <div class="col-md-4">
+            <ul>
+              <li><a href='#tabs-1'>SnP 500 <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-2'>NASDAQ <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-3'>DowJones <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-4'>DAX <i class="fa fa-angle-right"></i></a></li>
+              <li><a href='#tabs-5'>Russel <i class="fa fa-angle-right"></i></a></li>
+            </ul>
+          </div>
+          <div class="col-md-8">
+            <section class='tabs-content'>
+              <article id='tabs-1'>
+                <img src="{{ url_for('static', filename='images/single_service_01.jpg') }}" alt="">
+                <h4>SnP 500</h4>
+                <p>The Standard and Poor's 500, or simply the S&P 500, is a stock market index tracking the stock performance of 500 large companies listed on exchanges in the United States. It is one of the most commonly followed equity indices. As of December 31, 2020, more than $5.4 trillion was invested in assets tied to the performance of the index.
+             </article>
+              <article id='tabs-2'>
+                <img src="{{ url_for('static', filename='images/single_service_02.jpg') }}" alt="">
+                <h4>NASDAQ</h4>
+                <p>The Nasdaq Stock Market(National Association of Securities Dealers Automated Quotations Stock Market) is an American stock exchange based in New York City. It is ranked second on the list of stock exchanges by market capitalization of shares traded, behind the New York Stock Exchange. The exchange platform is owned by Nasdaq, Inc.,which also owns the Nasdaq Nordic stock market network and several U.S.-based stock and options exchanges.
+                
+                </article>
+              <article id='tabs-3'>
+                <img src="{{ url_for('static', filename='images/single_service_03.jpg') }}" alt="">
+                <h4>DowJones</h4>
+                <p>The Dow Jones Industrial Average (DJIA), Dow Jones, or simply the Dow, is a stock market index of 30 prominent companies listed on stock exchanges in the United States. 
+              </article>
+              <article id='tabs-4'>
+                <img src="{{ url_for('static', filename='images/single_service_04.jpg') }}" alt="">
+                <h4>DAX</h4>
+                <p>The DAX (Deutscher Aktienindex (German stock index), is a stock market index consisting of the 40 major German blue chip companies trading on the Frankfurt Stock Exchange. It is a total return index. 
+              </article>
+              <article id='tabs-5'>
+                <img src="{{ url_for('static', filename='images/single_service_05.jpg') }}" alt="">
+                <h4>Russel</h4>
+                <p>The Russell 2000 Index is a small-cap stock market index that makes up the smallest 2,000 stocks in the Russell 3000 Index. It was started by the Frank Russell Company in 1984. The index is maintained by FTSE Russell, a subsidiary of the London Stock Exchange Group (LSEG). 
+              </article>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <style>
+      .container1 {
+        position: relative;
+        width: 100%;
+      }
+      
+      .image1 {
+        opacity: 1;
+        display: block;
+        width: 100%;
+        height: auto;
+        transition: .5s ease;
+        backface-visibility: hidden;
+      }
+      
+      .middle1 {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      
+      .container1:hover .image1 {
+        opacity: 0.3;
+      }
+      
+      .container1:hover .middle1 {
+        opacity: 1;
+      }
+      
+      .text1 {
+        background-color: white;
+        color: rgba(255, 255, 255, 0.438);
+        font-size: 16px;
+        padding: 16px 32px;
+      }
+      </style>
+
+    <div class="callback-form callback-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>Snp <em>500</em></h2>
+                <span>Test form 01/01/2020 to 09/08/2022</span>
+              </div>
+            </div>
+            <!-- (A) LIGHTBOX CONTAINER -->
+            <div class="container1">
+              <img src="{{ url_for('static', filename='images/snp5001.png') }}" alt="Avatar" class="image1" style="width: 100%; height: auto;">
+              <div class="middle1">
+                <div class="text1"> <a href='assets/images/snp5001.png' target="_blank">Click to see full image </a> </div>
+              </div>
+            </div>
+
+          
+        </div>
+      </div>
+
+
+      <div class="callback-form callback-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>NAS<em>DAQ</em></h2>
+                <span>Test form 01/01/2020 to 09/08/2022</span>
+              </div>
+            </div>
+            <!-- (A) LIGHTBOX CONTAINER -->
+            <div class="container1">
+              <img src="{{ url_for('static', filename='images/nasdaq1.png') }}" alt="Avatar" class="image1" style="width: 100%; height: auto;">
+              <div class="middle1">
+                <div class="text1"> <a href='assets/images/nasdaq1.png' target="_blank">Click to see full image </a> </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div class="callback-form callback-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>Dow <em>Jones</em></h2>
+                <span>Test form 01/01/2020 to 09/08/2022</span>
+              </div>
+            </div>
+            <!-- (A) LIGHTBOX CONTAINER -->
+            <div class="container1">
+              <img src="{{ url_for('static', filename='images/Dowjones1.png') }}" alt="Avatar" class="image1" style="width: 100%; height: auto;">
+              <div class="middle1">
+                <div class="text1"> <a href='assets/images/Dax1.png' target="_blank">Click to see full image </a> </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+      <div class="callback-form callback-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>DAX </h2>
+                <span>Test form 01/01/2020 to 09/08/2022</span>
+              </div>
+            </div>
+            <!-- (A) LIGHTBOX CONTAINER -->
+            <div class="container1">
+              <img src="{{ url_for('static', filename='images/Dax1.png') }}" alt="Avatar" class="image1" style="width: 100%; height: auto;">
+              <div class="middle1">
+                <div class="text1"> <a href='assets/images/Dax1.png' target="_blank">Click to see full image </a> </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+
+
+      <div class="callback-form callback-services">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="section-heading">
+                <h2>Russell</h2>
+                <span>Test form 01/01/2020 to 09/08/2022</span>
+              </div>
+            </div>
+            <!-- (A) LIGHTBOX CONTAINER -->
+            <div class="container1">
+              <img src="{{ url_for('static', filename='images/Russell1.png') }}" alt="Avatar" class="image1" style="width: 100%; height: auto;">
+              <div class="middle1">
+                <div class="text1"> <a href='assets/images/Russell1.png' target="_blank">Click to see full image </a> </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+
+{% endblock %}

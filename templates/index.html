@@ -1,0 +1,287 @@
+{% extends 'base.html' %}
+
+{% block main %}
+
+
+
+
+
+    <!-- Header 
+    <div class="sub-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-xs-12">
+            <ul class="left-info">
+              <li><a href="#"><i class="fa fa-clock-o"></i>Mon-Fri 09:00-17:00</a></li>
+              <li><a href="#"><i class="fa fa-phone"></i>090-080-0760</a></li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="right-icons">
+              <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+              <li><a href="#"><i class="fa fa-behance"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+-->
+    <header class="">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><h2>ABA Future</h2></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="services.html">Our Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="preformance.html">Performance</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Page Content -->
+    <!-- Banner Starts Here -->
+    <div class="main-banner header-text" id="top">
+        <div class="Modern-Slider">
+          <!-- Item -->
+          <div class="item item-1">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we are ready to help you</h6>
+                  <h4>More than 400 % annual <br> profit on capital.</h4>
+                  <p>Aba Future is an algorithmic trading company that create, automate and robotize trading strategies.</p>
+                  <a href="contact.html" class="filled-button">contact us</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-2">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we are here to support you</h6>
+                  <h4>Invest in the <br> Stock Market.</h4>
+                  <p>Start investing in the stock market even you don't know how , we do it all for you.</p>
+                  <a href="services.html" class="filled-button">our services</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+          <!-- Item -->
+          <div class="item item-3">
+            <div class="img-fill">
+                <div class="text-content">
+                  <h6>we have a solid background</h6>
+                  <h4>Market Analysis<br>&amp; Statistics</h4>
+                  <p>We use Data and Artificial intelligence to create our strategies and to to optimize yours.</p>
+                  <a href="contact.html" class="filled-button">Contact us</a>
+                </div>
+            </div>
+          </div>
+          <!-- // Item -->
+        </div>
+    </div>
+    <!-- Banner Ends Here -->
+
+    <div class="request-form">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <h4>Request a call back right now ?</h4>
+          </div>
+          <div class="col-md-4">
+            <a href="contact.html" class="border-button">Contact Us</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>Financial <em>Services</em></h2>
+              <span>Aba Future gives you the opportunity to consistently execute or define the best execution across all trading platforms through intelligent routing on a wide range of advanced execution algorithms.</span>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{{ url_for('static', filename='images/service_01.jpg') }}" alt="">
+              <div class="down-content">
+                <h4>Trading consulting</h4>
+                <p>Aba Future maximize your potential to earn based on our knowledge, expertise and the use of advanced algorithms.</p>
+             
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{{ url_for('static', filename='images/service_02.jpg') }}" alt="">
+              <div class="down-content">
+                <h4>Backtest your strategy</h4>
+                <p>Testing strategies based on historical financial data or with trading simulators.</p>
+                
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-item">
+              <img src="{{ url_for('static', filename='images/service_03.jpg') }}" alt="">
+              <div class="down-content">
+                <h4>Optimize your strategy</h4>
+                <p>Optimization of strategy parameters to maximize profit and minimize risk.</p>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="fun-facts">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="left-content">
+              <span>Take a look on our results</span>
+              <h2>Our Trading Robots Performance <em>and growth</em></h2>
+              <p>All of the advice about investing in stocks for beginners doesn't do you much good if you don't have any way to actually buy stocks. To do this, you'll need a specialized type of account called a brokerage account. 
+              <br><br></p>
+              <a href="preformance.html" class="filled-button">Read More</a>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">945</div>
+                  <div class="count-title">Work Hours</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">23</div>
+                  <div class="count-title">Assets</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">5</div>
+                  <div class="count-title">Strategies</div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="count-area-content">
+                  <div class="count-digit">632</div>
+                  <div class="count-title">Position</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="more-info">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="more-info-content">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="left-image">
+                    <img src="{{ url_for('static', filename='images/more-info.jpg') }}" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6 align-self-center">
+                  <div class="right-content">
+                    <span>Who we are</span>
+                    <h2>Get to know about <em>our company</em></h2>
+                    <p>Aba Future is oriented towards consulting to facilitate trading for beginners and improvement, optimization and automation for professionals.</p>
+                    <a href="about.html" class="filled-button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+<!--
+    <div class="testimonials">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="section-heading">
+              <h2>What they say <em>about us</em></h2>
+              <span>testimonials from our greatest clients</span>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="owl-testimonials owl-carousel">
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>George Walker</h4>
+                  <span>Chief Financial Analyst</span>
+                  <p>"Nulla ullamcorper, ipsum vel condimentum congue, mi odio vehicula tellus, sit amet malesuada justo sem sit amet quam. Pellentesque in sagittis lacus."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>John Smith</h4>
+                  <span>Market Specialist</span>
+                  <p>"In eget leo ante. Sed nibh leo, laoreet accumsan euismod quis, scelerisque a nunc. Mauris accumsan, arcu id ornare malesuada, est nulla luctus nisi."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>David Wood</h4>
+                  <span>Chief Accountant</span>
+                  <p>"Ut ultricies maximus turpis, in sollicitudin ligula posuere vel. Donec finibus maximus neque, vitae egestas quam imperdiet nec. Proin nec mauris eu tortor consectetur tristique."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+              <div class="testimonial-item">
+                <div class="inner-content">
+                  <h4>Andrew Boom</h4>
+                  <span>Marketing Head</span>
+                  <p>"Curabitur sollicitudin, tortor at suscipit volutpat, nisi arcu aliquet dui, vitae semper sem turpis quis libero. Quisque vulputate lacinia nisl ac lobortis."</p>
+                </div>
+                <img src="http://placehold.it/60x60" alt="">
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    -->
+{% endblock %}
